@@ -51,9 +51,8 @@ function preload()
   eat = loadAnimation("eat_0.png" , "eat_1.png","eat_2.png","eat_3.png","eat_4.png");
   sad = loadAnimation("sad_1.png","sad_2.png","sad_3.png");
 
-  empty_star = loadAnimation("empty.png");
-  one_star = loadAnimation("one_star.png");
-  two_star = loadAnimation("stars.png");
+  //Carregue uma animação para a 'empty_star', 'one_star, ' e 'two_star
+  //???
   
   blink.playing = true;
   eat.playing = true;
@@ -178,13 +177,15 @@ function draw()
    if(collide(fruit,star,20)==true)
    {
      star.visible = false;
-     star_display.changeAnimation('one');
+     //Mude a animação da estrela para 'one'
+     //???
    }
 
    if(collide(fruit,star2,40)==true)
    {
      star2.visible= false;
-     star_display.changeAnimation('two');
+     //Mude a animação da estrela para 'two'
+     //???
    }   
    
 }
